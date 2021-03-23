@@ -2,8 +2,7 @@
 
 #include "test/catch.hpp"
 #include "sensor-validate.h"
-#include <stdlib.h>
-#include <math.h>
+
 
 TEST_CASE("reports error when soc jumps abruptly") {
   double socReadings[] = {0.0, 0.01, 0.5, 0.51};
