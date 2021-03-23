@@ -20,5 +20,5 @@ TEST_CASE("reports error when current jumps abruptly") {
 TEST_CASE("reports NAN when readings are empty") {
     double socReadings[] = {};
     int numOfSocReadings = 0;
-    REQUIRE(isnan(currentReadings, numOfCurReadings));
+    REQUIRE(isnan(socReadings, numOfSocReadings));
 }
