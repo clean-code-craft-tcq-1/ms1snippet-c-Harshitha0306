@@ -1,6 +1,12 @@
+#ifndef sensor-validate_h
+#define sensor-validate_h
 
-int _give_me_a_good_name(double value, double nextValue, double maxDelta);
+int IsDifference_GreaterthanThreshold(double value, double nextValue, double maxDelta);
+
+int validateParameterreadings(double* values, int numOfValues,double maxDelta);
 
 int validateSOCreadings(double* values, int numOfValues);
 
 int validateCurrentreadings(double* values, int numOfValues);
+
+#endif
