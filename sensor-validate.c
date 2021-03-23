@@ -10,7 +10,7 @@ int IsDifference_GreaterthanThreshold(double value, double nextValue, double max
 }
 
 int validateParameterreadings(double* values, int numOfValues,double maxDelta) {
-    if(values == NULL && numOfValues == 0)
+    if(values == NULL || numOfValues == 0)
     {
         return NAN;
     }
