@@ -17,8 +17,8 @@ TEST_CASE("reports error when current jumps abruptly") {
   REQUIRE(validateSOCreadings(currentReadings, numOfCurReadings) == 0);
 }
 
-// TEST_CASE("reports NAN when readings are empty") {
-//     double socReadings[] = {};
-//     int numOfSocReadings = 0;
-//     REQUIRE(isnan(socReadings, numOfSocReadings));
-// }
+ TEST_CASE("reports NAN when readings are empty") {
+     double socReadings[] = {};
+     int numOfSocReadings = 0;
+    REQUIRE(isnan(socReadings, numOfSocReadings));
+}
