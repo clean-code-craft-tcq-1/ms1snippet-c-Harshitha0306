@@ -10,15 +10,17 @@ int IsDifference_GreaterthanThreshold(double value, double nextValue, double max
 }
 
 float validateParameterreadings(double* values, int numOfValues,double maxDelta) {
-    int lastButOneIndex = numOfValues - 1;
-  for(int i = 0; i < lastButOneIndex; i++) {
+  int lastButOneIndex = numOfValues - 1;
+  int i=0;
+  while(i < lastButOneIndex) {
     if(!IsDifference_GreaterthanThreshold(values[i], values[i + 1],maxDelta)) {
       return 0;
     }
+      i++;
   }
+   
   return 1;
 }
-
 float validateSOCreadings(double* values, int numOfValues) {
   if(numOfValues == 0 || values == NULL)
     {
