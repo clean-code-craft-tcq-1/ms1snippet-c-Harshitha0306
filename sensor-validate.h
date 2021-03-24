@@ -1,6 +1,24 @@
+/*
+ *
+ ***************************************************************************************************
+ * Author:             Harshitha Subramani
+ * Date:               24/03/2021
+ * Filename:           sensor-validate.h
+ *
+ ****************************************************************************************************
+ *
+ ***************************************************************************************
+ * Function declarations
+ ***************************************************************************************
+ */
 
-int _give_me_a_good_name(double value, double nextValue, double maxDelta);
+float CheckForNaN(double* values, int numOfValues);
 
-int validateSOCreadings(double* values, int numOfValues);
+int IsDifference_GreaterthanThreshold(double value, double nextValue, double maxDelta);
 
-int validateCurrentreadings(double* values, int numOfValues);
+float IsSuddenJumpObserved(double* values, int numOfValues,double maxDelta);
+
+float validateSOCreadings(double* values, int numOfValues);
+
+float validateCurrentreadings(double* values, int numOfValues);
+
