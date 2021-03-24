@@ -1,4 +1,4 @@
-#include "sensor_validate.h"
+#include "sensor-validate.h"
 #include <stdlib.h>
 #include <math.h>
 
