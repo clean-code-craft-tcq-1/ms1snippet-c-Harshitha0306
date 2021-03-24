@@ -3,10 +3,10 @@
 
 int IsDifference_GreaterthanThreshold(double value, double nextValue, double maxDelta);
 
-int validateParameterreadings(double* values, int numOfValues,double maxDelta);
+float validateParameterreadings(double* values, int numOfValues,double maxDelta);
 
-int validateSOCreadings(double* values, int numOfValues);
+float validateSOCreadings(double* values, int numOfValues);
 
-int validateCurrentreadings(double* values, int numOfValues);
+float validateCurrentreadings(double* values, int numOfValues);
 
 #endif
